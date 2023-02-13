@@ -2,18 +2,17 @@
 export default {
     data() {
         return {
-            title: 'La mia prima app con Vite!!',
+            
         }
     }
 }
 </script>
 
 <template>
-    <h1>{{ title }}</h1>
+    <!-- creazione template html -->
+
 </template>
 
-<style scoped>
-h1 {
-    color: red;
-}
+<style scoped lang="scss">
+/* aggiunta stile css */
 </style>
