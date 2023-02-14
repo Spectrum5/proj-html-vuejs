@@ -3,10 +3,13 @@ import TopFooter from "../../components/Footer/TopFooter.vue"
 import BottomFooter from "../../components/Footer/BottomFooter.vue"
 
 export default {
+    components: {
+        TopFooter,
+        BottomFooter,
+    },
     data() {
         return {
-            TopFooter,
-            BottomFooter,
+
         }
     }
 }
@@ -19,5 +22,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-    /* aggiunta stile css */
+/* aggiunta stile css */
 </style>

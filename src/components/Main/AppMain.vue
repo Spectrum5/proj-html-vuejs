@@ -9,15 +9,18 @@ import MainFooter from "../../components/Main/MainFooter.vue"
 
 
 export default {
+    components: {
+        SliderMain,
+        TableMain,
+        LifeStyleMain,
+        BannerMain,
+        CardFeaturedMain,
+        YoutubeMain,
+        MainFooter,
+    },
     data() {
         return {
-            SliderMain,
-            TableMain,
-            LifeStyleMain,
-            BannerMain,
-            CardFeaturedMain,
-            YoutubeMain,
-            MainFooter,
+
         }
     }
 }
@@ -35,5 +38,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-    /* aggiunta stile css */
+/* aggiunta stile css */
 </style>

@@ -4,11 +4,15 @@ import LogoHeader from "../../components/Header/LogoHeader.vue"
 import NavHeader from "../../components/Header/NavHeader.vue"
 
 export default {
+    name: 'AppMain',
+    components: {
+        TopHeader,
+        LogoHeader,
+        NavHeader,
+    },
     data() {
         return {
-            TopHeader,
-            LogoHeader,
-            NavHeader,
+
         }
     }
 }
@@ -23,5 +27,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-    /* aggiunta stile css */
+/* aggiunta stile css */
 </style>
