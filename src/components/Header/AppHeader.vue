@@ -21,12 +21,12 @@ export default {
 <template>
     <!-- creazione template html -->
     <TopHeader />
-    <LogoHeader />
-    <NavHeader />
-
+    <div class="container">    
+        <LogoHeader />
+        <NavHeader />
+    </div>
 </template>
 
 <style scoped lang="scss">
 /* aggiunta stile css */
-
 </style>
