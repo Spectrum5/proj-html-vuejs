@@ -17,6 +17,17 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faHouseChimney } from '@fortawesome/free-solid-svg-icons'
+import { faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+
+
+
+
+
+
 
 
 
@@ -27,7 +38,7 @@ export default {
 };
 
 /* add icons to the library */
-library.add(faChevronLeft, faChevronRight, faFacebook, faTwitter, faInstagram, faYoutube, faBars, faMagnifyingGlass);
+library.add(faChevronLeft, faChevronRight, faFacebook, faTwitter, faInstagram, faYoutube, faBars, faMagnifyingGlass, faHouseChimney, faSuitcase, faBookOpenReader, faBook, faUser);
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
