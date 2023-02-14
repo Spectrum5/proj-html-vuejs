@@ -11,9 +11,20 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+
+export default {
+  components: {
+    FontAwesomeIcon,
+  },
+};
 
 /* add icons to the library */
-library.add(faChevronLeft, faChevronRight)
+library.add(faChevronLeft, faChevronRight, faFacebook, faTwitter, faInstagram, faYoutube);
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
