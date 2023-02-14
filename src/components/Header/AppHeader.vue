@@ -21,10 +21,8 @@ export default {
 <template>
     <!-- creazione template html -->
     <TopHeader />
-    <div class="container">    
-        <LogoHeader />
-        <NavHeader />
-    </div>
+    <LogoHeader />
+    <NavHeader />
 </template>
 
 <style scoped lang="scss">
