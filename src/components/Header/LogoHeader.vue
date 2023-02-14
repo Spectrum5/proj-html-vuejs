@@ -14,5 +14,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-/* aggiunta stile css */
+    /* aggiunta stile css */
 </style>
