@@ -5,6 +5,7 @@ import AppMain from "./components/Main/AppMain.vue"
 import AppFooter from "./components/Footer/AppFooter.vue"
 
 export default {
+  name: "App",
   components: {
     AppHeader,
     AppMain,
@@ -29,5 +30,5 @@ export default {
 </template>
 
 <style lang="scss">
-@use "./styles/main.scss";
+@use "./styles/main.scss" as *;
 </style>

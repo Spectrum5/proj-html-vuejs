@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            
+
         }
     }
 }
@@ -10,9 +10,9 @@ export default {
 
 <template>
     <!-- creazione template html -->
-
 </template>
 
 <style scoped lang="scss">
-    /* aggiunta stile css */
+/* aggiunta stile css */
+@use '../../styles/partials/variables.scss' as*;
 </style>

@@ -23,4 +23,6 @@ export default {
 
 <style scoped lang="scss">
 /* aggiunta stile css */
+
+
 </style>
