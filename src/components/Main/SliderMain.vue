@@ -36,10 +36,12 @@ export default {
 
 <template>
     <!-- creazione template html -->
-    <div class="row">
-        <div class="slider col-12">
-            <div class="cards d-flex flex-wrap">
-                <CardTopSlider :sliderCards="sliderCards" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="slider col-12">
+                <div class="cards d-flex flex-wrap">
+                    <CardTopSlider :sliderCards="sliderCards" />
+                </div>
             </div>
         </div>
     </div>
@@ -49,7 +51,8 @@ export default {
 /* aggiunta stile css */
 @use '../../styles/partials/variables.scss' as*;
 
-.slider {
+.container-fluid {
     background-color: $background_light;
+    padding: 20px;
 }
 </style>

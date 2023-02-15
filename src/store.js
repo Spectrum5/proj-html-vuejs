@@ -32,7 +32,7 @@ export const store = reactive({
             text: 'December 26, 2022'
         },
         {
-
+            demo: 'demo',
             title: 'Music The Love Of My Life',
             text: 'December 26, 2022'
         },

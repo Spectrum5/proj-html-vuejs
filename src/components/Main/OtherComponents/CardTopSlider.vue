@@ -24,7 +24,7 @@ export default {
 @use '../../../styles/partials/variables.scss' as*;
 
 .card {
-    width: calc(100% / 4 - 15px);
-    margin: 20px 5px 20px 10px;
+    width: calc(100% / 4 - 10px);
+    margin: 5px;
 }
 </style>
