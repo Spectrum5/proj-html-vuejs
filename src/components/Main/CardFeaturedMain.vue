@@ -4,39 +4,45 @@ export default {
         return {
             cards: [
                 {
-                    image: "../../assets/img/best-places.webp",
-                    title: "Card Title 1",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    title: "Live Ideas You Might Be Anime",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: "../../assets/img/best-places.webp",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 2",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: "../../assets/img/best-places.webp",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 3",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: "../../assets/img/best-places.webp",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 4",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: "../../assets/img/best-places.webp",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 5",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: "../../assets/img/best-places.webp",
+                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 6",
-                    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+                    text: 'December 26, 2022',
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 // add more cards here
@@ -113,6 +119,7 @@ export default {
 
 <template>
     <section>
+        
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -153,6 +160,7 @@ export default {
 .carousel {
     width: 100%;
     overflow: hidden;
+    text-align: center;
 }
 
 .inner {
@@ -161,7 +169,7 @@ export default {
 }
 
 .card {
-    width: calc(100% / 3);
+    width: calc(100% / 3 + 15px);
     display: inline-flex;
 }
 
