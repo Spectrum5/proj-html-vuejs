@@ -29,8 +29,12 @@ export default {
             <div class="col-8">
                 <div id="background-img-1" class="img-col-8  rounded d-flex align-items-end mt-1">
                     <div class="content">
-                        <h6>{{ store.info[7].demo }} {{ store.info[7].text }}</h6>
-                        <h5>{{ store.info[7].title }}</h5>
+                        <h6>
+                            <font-awesome-icon icon="fa-solid fa-user" class="me-2"/>{{ store.info[7].demo }} {{ store.info[7].text }}
+                        </h6>
+                        <h5>
+                            {{ store.info[7].title }}
+                        </h5>
                     </div>
                 </div>
 
@@ -39,8 +43,12 @@ export default {
                 <div class="box d-flex">
                     <div id="background-img-2" class="img-box rounded d-flex align-items-end mt-1"></div>
                     <div class="content">
-                        <h6>{{ store.info[7].demo }} {{ store.info[7].text }}</h6>
-                        <h5>{{ store.info[7].title }}</h5>
+                        <h6>
+                            <font-awesome-icon icon="fa-solid fa-user" class="me-2"/>{{ store.info[7].demo }} {{ store.info[7].text }}
+                        </h6>
+                        <h5>
+                            {{ store.info[7].title }}
+                        </h5>
                     </div>
                 </div>
 
@@ -48,16 +56,24 @@ export default {
                 <div class="box d-flex">
                     <div id="background-img-3" class=" img-box rounded d-flex align-items-end mt-1"></div>
                     <div class="content">
-                        <h6>{{ store.info[0].demo }} {{ store.info[0].text }}</h6>
-                        <h5>{{ store.info[0].title }}</h5>
+                        <h6>
+                            <font-awesome-icon icon="fa-solid fa-user" class="me-2"/>{{ store.info[0].demo }} {{ store.info[0].text }}
+                        </h6>
+                        <h5>
+                            {{ store.info[0].title }}
+                        </h5>
                     </div>
                 </div>
                 <hr>
                 <div class="box d-flex">
                     <div id="background-img-4" class=" img-box rounded d-flex align-items-end mt-1"></div>
                     <div class="content">
-                        <h6>{{ store.info[6].demo }} {{ store.info[6].text }}</h6>
-                        <h5>{{ store.info[6].title }}</h5>
+                        <h6>
+                            <font-awesome-icon icon="fa-solid fa-user" class="me-2"/>{{ store.info[6].demo }} {{ store.info[6].text }}
+                        </h6>
+                        <h5>
+                            {{ store.info[6].title }}
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -76,10 +92,6 @@ export default {
     .content {
         color: white;
         padding: 10px;
-
-        h6 {
-            margin-left: 5px;
-        }
     }
 }
 
@@ -97,7 +109,6 @@ export default {
     h5 {
         font-size: 0.9rem;
         font-weight: bold;
-        color: white;
     }
 }
 
