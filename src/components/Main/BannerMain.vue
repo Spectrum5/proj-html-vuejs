@@ -10,7 +10,7 @@ export default {
 
 <template>
     <!-- creazione template html -->
-    <div class="container-fluid p-4">
+    <div class="container-fluid p-4 mt-4 mb-2">
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -11,8 +11,8 @@ export default {
 </script>
 
 <template >
-    <div class="container py-5">
-        <div class="row py-4">
+    <div class="container py-3">
+        <div class="row py-2">
             <div class="col d-flex justify-content-between">
                 <div>
                     <h3 class="text-uppercase">Lifestyle & stories</h3>
