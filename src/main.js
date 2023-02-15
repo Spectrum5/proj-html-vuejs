@@ -23,14 +23,6 @@ import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
-
-
-
-
-
 export default {
   components: {
     FontAwesomeIcon,
