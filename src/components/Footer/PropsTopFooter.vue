@@ -1,6 +1,4 @@
 <script>
-
-
 export default {
     props: {
         contactStarted: Array,
@@ -11,7 +9,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container p-3">
+    <div class="container">
         <div class="row">
             <div class="col-2">
                 <h5>get started</h5>
@@ -54,7 +52,18 @@ export default {
             </div>
         </div>
         <hr class="text-white">
-</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img class="logo-footer" src="../../assets/img/anime-whitelogo.png" alt="">
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <a href="https://www.linkedin.com/in/sergio-tosku-3b7562181/">© Anime Tech, Theme by Sergio</a>
+            </div>
+        </div>
+    </div>
 </template>
 <style scoped lang="scss" >
 @use '../../styles/partials/variables.scss' as*;
@@ -78,4 +87,8 @@ a {
         color: $text_dark;
     }
 }
+
+.logo-footer{
+        width: 220px;
+    }
 </style>

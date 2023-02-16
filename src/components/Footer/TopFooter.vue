@@ -1,6 +1,6 @@
 <script>
-
 import PropsTopFooter from './PropsTopFooter.vue'
+
 export default {
     components: {
         PropsTopFooter,
