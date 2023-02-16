@@ -1,12 +1,5 @@
 <script>
 
-
-
-
-
-
-
-
 export default {
     data() {
         return {
@@ -88,7 +81,7 @@ export default {
                     <div class="carousel-container">
                         <div class="carousel">
                             <div class="inner" ref="inner" :style="innerStyles">
-                                <div class="card" v-for="(card, index) in cards" :key="index">
+                                <div class="card position-relative" v-for="(card, index) in cards" :key="index">
                                     <img :src="card.image" class="card-img-top" alt="card image">
                                     <div class="card-body">
                                         <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>

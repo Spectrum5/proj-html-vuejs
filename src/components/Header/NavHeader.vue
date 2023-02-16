@@ -3,13 +3,40 @@
 export default {
     data() {
         return {
-
-        }
-    }
-}
+            menuItems: [
+                {
+                    label: "home",
+                    link: "#nogo",
+                    icon: ["fa-solid", "fa-house-chimney"],
+                },
+                {
+                    label: "lifestyle",
+                    link: "#nogo",
+                    icon: ["fa-solid", "fa-suitcase"],
+                },
+                {
+                    label: "stories",
+                    link: "#nogo",
+                    icon: ["fa-solid", "fa-book-open-reader"],
+                },
+                {
+                    label: "pages",
+                    link: "#nogo",
+                    icon: ["fa-solid", "fa-book"],
+                },
+                {
+                    label: "about us",
+                    link: "#nogo",
+                    icon: ["fa-solid", "fa-user"],
+                },
+            ],
+        };
+    },
+};
 </script>
 
-<template><!-- creazione template html -->
+<template>
+    <!-- creazione template html -->
     <div class="container">
         <div class="row">
             <div class="col-2 d-flex align-items-center">
@@ -17,47 +44,23 @@ export default {
             </div>
             <div class="col-8">
                 <ul class="d-flex justify-content-center align-items-center h-100 list-unstyled text-uppercase">
-                    <li class="me-4">
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-house-chimney" class="me-2" />
-                            <span>home</span>
-                        </a>
-                    </li>
-                    <li class="me-4">
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-suitcase" class="me-2" />
-                            <span>lifestyle</span>
-                        </a>
-                    </li>
-                    <li class="me-4">
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-book-open-reader" class="me-2" />
-                            <span>stories</span>
-                        </a>
-                    </li>
-                    <li class="me-4">
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-book" class="me-2" />
-                            <span>pages</span>
-                        </a>
-                    </li>
-                    <li class="me-4">
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-user" class="me-2" />
-                            <span>about us</span>
+                    <li v-for="(item, index) in menuItems" :key="index" class="me-4">
+                        <a :href="item.link">
+                            <font-awesome-icon :icon="item.icon" class="me-2" />
+                            <span>{{ item.label }}</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-2 d-flex align-items-center justify-content-end">
                 <div class="search-box">
-                    <button class="btnn-search"><font-awesome-icon icon="fa-solid fa-magnifying-glass"
-                            class="fs-3" /></button>
-                    <input type="text" class="input-search" placeholder="Cerca...">
+                    <button class="btnn-search">
+                        <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="fs-3" />
+                    </button>
+                    <input type="text" class="input-search" placeholder="Cerca..." />
                 </div>
             </div>
         </div>
-
 </div>
 </template>
 
@@ -113,7 +116,7 @@ ul {
     color: $text_white;
     background-color: transparent;
     pointer-events: painted;
-    
+
     &:hover {
         background-color: $background_dark;
     }
@@ -124,6 +127,7 @@ ul {
     border-radius: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+
     &:hover {
         background-color: $background_dark;
     }
@@ -134,7 +138,9 @@ ul {
     border-radius: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+
     &:hover {
         background-color: $background_dark;
     }
-}</style>
+}
+</style>
