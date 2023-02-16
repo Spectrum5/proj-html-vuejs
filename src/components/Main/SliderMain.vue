@@ -97,8 +97,8 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-btn left" @click="prev">prev</button>
-                        <button class="carousel-btn right" @click="next">next</button>
+                        <button class="carousel-btn left" @click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left"/></button>
+                        <button class="carousel-btn right" @click="next"><font-awesome-icon icon="fa-solid fa-chevron-right"/></button>
                     </div>
                 </div>
             </div>
