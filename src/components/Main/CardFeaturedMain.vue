@@ -43,7 +43,7 @@ export default {
                     title: "Card Title 6",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo"
                 },
                 // add more cards here
             ],
@@ -106,8 +106,6 @@ export default {
                                     <h5 class="card-title">{{ card.title }}</h5>
                                     <p class="card-text smaller">{{ card.text }}</p>
                                     <p class="card-text smaller">{{ card.description }}</p>
-                                    
-
                                     <a :href="card.link" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
