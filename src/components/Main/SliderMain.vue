@@ -8,36 +8,43 @@ export default {
                     image: new URL("../../assets/img/healthy-foods.webp", import.meta.url).href,
                     title: 'The best Healthy Foods in 2022',
                     text: 'December 26, 2022',
+                    category: 'Food'
                 },
                 {
                     image: new URL("../../assets/img/winter.webp", import.meta.url).href,
                     title: 'The Best Winter Outfits',
                     text: 'December 26, 2022',
+                    category: 'Fashion'
                 },
                 {
                     image: new URL("../../assets/img/photographers-mistakes.webp", import.meta.url).href,
                     title: 'Beginner Photographers Mistake',
                     text: 'December 26, 2022',
+                    category: 'Fashion'
                 },
                 {
                     image: new URL("../../assets/img/anime-fashion.webp", import.meta.url).href,
                     title: 'Live Ideas You Might Be Anime',
-                    text: 'December 26, 2022'
+                    text: 'December 26, 2022',
+                    category: 'Fashion'
                 },
                 {
                     image: new URL("../../assets/img/rice-ball.webp", import.meta.url).href,
                     title: "Card Title 5",
                     text: 'December 26, 2022',
+                    category: 'Lifestyle'
                 },
                 {
                     image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Card Title 6",
                     text: 'December 26, 2022',
+                    category: 'Lifestyle'
                 },
                 {
                     image: new URL("../../assets/img/travel-alone.webp", import.meta.url).href,
                     title: "Card Title 6",
                     text: 'December 26, 2022',
+                    category: 'Lifestyle'
                 },
 
                 // add more cards here
@@ -86,6 +93,7 @@ export default {
                                     <div class="card-body">
                                         <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>
                                         <p class="card-text fw-bold">{{ card.text }}</p>
+                                        <p class="categoria fw-bold">{{ card.category }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +110,12 @@ export default {
 <style lang="scss" scoped>
 /* aggiunta stile css */
 @use '../../styles/partials/variables.scss' as*;
+@use '../../styles/partials/mixins.scss' as*;
 
+.categoria{
+        color: $text_dark;
+        @include categoria;
+    }
 .container-fluid {
     background-color: $background_light;
     padding: 20px;
