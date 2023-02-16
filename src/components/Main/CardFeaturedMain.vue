@@ -90,8 +90,8 @@ export default {
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
-                    <button @click="prev">prev</button>
-                    <button @click="next">next</button>
+                    <button class="carousel-btn left" @click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left"/></button>
+                    <button class="carousel-btn right" @click="next"><font-awesome-icon icon="fa-solid fa-chevron-right"/></button>
                 </div>
             </div>
         </div>
@@ -143,4 +143,20 @@ export default {
         color: $text_light;
     }
 }
+.carousel-btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $background_dark;
+        color: $text_white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        margin-left: 20px;
+
+        &:hover {
+            background-color: $background_red;
+        }
+    }
 </style>

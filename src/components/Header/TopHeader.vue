@@ -93,9 +93,4 @@ ul {
         }
     }
 }
-
-.fa-brands {
-    color: $text_white;
-
-}
 </style>
