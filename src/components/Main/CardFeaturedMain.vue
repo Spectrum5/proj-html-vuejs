@@ -12,35 +12,35 @@ export default {
                 },
                 {
                     image: new URL("../../assets/img/visit-france.webp", import.meta.url).href,
-                    title: "Card Title 2",
+                    title: "Reasons To Visit France",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo"
                 },
                 {
                     image: new URL("../../assets/img/travel-alone.webp", import.meta.url).href,
-                    title: "Card Title 3",
+                    title: "Traveling Alone is Awesome",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo"
                 },
                 {
                     image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
-                    title: "Card Title 4",
+                    title: "Best Places For A Road Trip",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo"
                 },
                 {
                     image: new URL("../../assets/img/rice-ball.webp", import.meta.url).href,
-                    title: "Card Title 5",
+                    title: "Rice Ball",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo"
                 },
                 {
                     image: new URL("../../assets/img/winter.webp", import.meta.url).href,
-                    title: "Card Title 6",
+                    title: "The Winter Is Coming",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#nogo"
@@ -82,14 +82,12 @@ export default {
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <div>
-                        <h5 class="text-uppercase fw-bold">
-                            featured posts
-                        </h5>
-                    </div>
+                <div class="col-6 pt-5">
+                    <h5 class="text-uppercase fs-4 fw-bold ">
+                        featured posts
+                    </h5>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-6 d-flex pt-5 justify-content-end">
                     <button class="carousel-btn left" @click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left"/></button>
                     <button class="carousel-btn right" @click="next"><font-awesome-icon icon="fa-solid fa-chevron-right"/></button>
                 </div>
@@ -108,7 +106,7 @@ export default {
                                     <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>
                                     <p class="card-text">{{ card.text }}</p>
                                     <p class="">{{ card.description }}</p>
-                                    <a :href="card.link" class="btn btn-primary">Go somewhere</a>
+                                    <a :href="card.link" class="btn btn-primary">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -157,6 +155,16 @@ export default {
 
         &:hover {
             background-color: $background_red;
+        }
+    }
+
+    .btn-primary {
+        background-color: $background_red;
+        border: none;
+        padding: 5px 30px 5px 30px;
+        border-radius: 50px;
+        &:hover {
+            background-color: $background_dark;
         }
     }
 </style>
