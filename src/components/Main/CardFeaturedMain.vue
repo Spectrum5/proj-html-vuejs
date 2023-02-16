@@ -129,8 +129,9 @@ export default {
     }
 
     .card {
-        flex-basis: calc(100% / 3);
+        flex-basis: calc(100% / 3 - 4px);
         flex-shrink: 0;
+        margin: 2px;
     }
 }
 </style>
