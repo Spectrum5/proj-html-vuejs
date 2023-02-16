@@ -1,4 +1,5 @@
 <script>
+
 export default {
     props: {
         contactStarted: Array,
@@ -44,7 +45,7 @@ export default {
                 </ul>
             </div>
             <div class="col-4">
-                <div class="newslatter d-flex flex-column text-center">
+                <div class="newslatter d-flex flex-column">
                     <h5>subscribe to newslatter</h5>
                     <input placeholder="Email" type="email" class="form-control ">
                     <button class="btn btn-dark mt-2 text-uppercase">subscribe</button>
@@ -88,7 +89,14 @@ a {
     }
 }
 
-.logo-footer{
-        width: 220px;
+.logo-footer {
+    width: 220px;
+}
+
+.btn-dark {
+    &:hover {
+        background-color: $background_white;
+        color: $text_red;
     }
+}
 </style>
