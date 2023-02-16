@@ -1,5 +1,6 @@
 <script>
 
+
 export default {
     props: {
         contactStarted: Array,
@@ -16,7 +17,7 @@ export default {
                 <h5>get started</h5>
                 <ul>
                     <li v-for="(item, index) in contactStarted" :key="index">
-                        {{ item.label }}
+                        <a href="#nogo">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -24,7 +25,7 @@ export default {
                 <h5>about</h5>
                 <ul>
                     <li v-for="(item, index) in contactAbout" :key="index">
-                        {{ item.label }}
+                        <a href="#nogo">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -32,7 +33,7 @@ export default {
                 <h5>features</h5>
                 <ul>
                     <li v-for="(item, index) in contactFeatures" :key="index">
-                        {{ item.label }}
+                        <a href="#nogo">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -40,7 +41,7 @@ export default {
                 <h5>quick links</h5>
                 <ul>
                     <li v-for="(item, index) in contactLinks" :key="index">
-                        {{ item.label }}
+                        <a href="#nogo">{{ item.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +54,7 @@ export default {
             </div>
         </div>
         <hr class="text-white">
-    </div>
+</div>
 </template>
 <style scoped lang="scss" >
 @use '../../styles/partials/variables.scss' as*;
@@ -67,5 +68,14 @@ ul {
 h5 {
     color: $text_white;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: $text_white;
+
+    &:hover {
+        color: $text_dark;
+    }
 }
 </style>
