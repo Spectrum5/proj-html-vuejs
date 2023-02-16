@@ -82,16 +82,15 @@ ul {
 }
 
 .input-search {
-    height: 48px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-style: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.3rem;
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
     background-color: $background_red;
-    padding-right: 40px;
     color: $text_white;
 }
 
@@ -105,7 +104,6 @@ ul {
     width: 50px;
     height: 50px;
     border-style: none;
-    font-size: 20px;
     font-weight: bold;
     outline: none;
     cursor: pointer;
@@ -115,6 +113,10 @@ ul {
     color: $text_white;
     background-color: transparent;
     pointer-events: painted;
+    
+    &:hover {
+        background-color: $background_dark;
+    }
 }
 
 .btnn-search:focus~.input-search {
@@ -122,6 +124,9 @@ ul {
     border-radius: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    &:hover {
+        background-color: $background_dark;
+    }
 }
 
 .input-search:focus {
@@ -129,4 +134,7 @@ ul {
     border-radius: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    &:hover {
+        background-color: $background_dark;
+    }
 }</style>

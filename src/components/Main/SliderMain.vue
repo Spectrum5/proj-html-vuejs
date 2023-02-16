@@ -149,14 +149,18 @@ export default {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        background-color: #fff;
-        color: #000;
+        background-color: $background_red;
+        color: $text_white;
         font-weight: bold;
         border: none;
         outline: none;
+        font-size: 1.4rem;
+        &:hover {
+            background-color: $background_dark;
+        }
     }
 
     .carousel-btn.left {
