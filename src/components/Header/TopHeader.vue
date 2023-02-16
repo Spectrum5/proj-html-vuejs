@@ -1,4 +1,5 @@
 <script>
+
 export default {
     data() {
         return {
@@ -8,8 +9,7 @@ export default {
 }
 </script>
 
-<template>
-    <!-- creazione template html -->
+<template><!-- creazione template html -->
     <div class="container-top-header">
         <div class="container">
             <div class="row text-white fw-bold">
@@ -55,7 +55,7 @@ export default {
             </div>
         </div>
 
-    </div>
+</div>
 </template>
 
 <style scoped lang="scss">
@@ -85,14 +85,17 @@ ul {
             text-decoration: none;
             color: inherit;
             font-size: 1.4rem;
+
+            &:hover {
+                border-radius: 50%;
+                color: $text_dark;
+            }
         }
     }
 }
 
 .fa-brands {
     color: $text_white;
-    &:hover {
-        background-color: $background_dark;
-    }
+
 }
 </style>
