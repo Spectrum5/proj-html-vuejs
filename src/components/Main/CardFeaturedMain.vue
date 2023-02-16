@@ -4,21 +4,21 @@ export default {
         return {
             cards: [
                 {
-                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    image: new URL("../../assets/img/anime-fashion.webp", import.meta.url).href,
                     title: "Live Ideas You Might Be Anime",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    image: new URL("../../assets/img/visit-france.webp", import.meta.url).href,
                     title: "Card Title 2",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    image: new URL("../../assets/img/travel-alone.webp", import.meta.url).href,
                     title: "Card Title 3",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
@@ -32,14 +32,14 @@ export default {
                     link: "#"
                 },
                 {
-                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    image: new URL("../../assets/img/rice-ball.webp", import.meta.url).href,
                     title: "Card Title 5",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
                     link: "#"
                 },
                 {
-                    image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
+                    image: new URL("../../assets/img/winter.webp", import.meta.url).href,
                     title: "Card Title 6",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
@@ -84,7 +84,9 @@ export default {
             <div class="row">
                 <div class="col-6">
                     <div>
-                        <h2>Portfolio</h2>
+                        <h5 class="text-uppercase fw-bold">
+                            featured posts
+                        </h5>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
@@ -103,9 +105,9 @@ export default {
                             <div class="card" v-for="(card, index) in cards" :key="index">
                                 <img :src="card.image" class="card-img-top" alt="card image">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{ card.title }}</h5>
-                                    <p class="card-text smaller">{{ card.text }}</p>
-                                    <p class="card-text smaller">{{ card.description }}</p>
+                                    <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>
+                                    <p class="card-text">{{ card.text }}</p>
+                                    <p class="">{{ card.description }}</p>
                                     <a :href="card.link" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
@@ -118,6 +120,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* aggiunta stile css */
+@use '../../styles/partials/variables.scss' as*;
 .carousel {
     width: 100%;
     overflow: hidden;
@@ -132,6 +136,11 @@ export default {
         flex-basis: calc(100% / 3 - 4px);
         flex-shrink: 0;
         margin: 2px;
+        color: $text_dark;
+    }
+    .card-text {
+        font-size: 0.9rem;
+        color: $text_light;
     }
 }
 </style>
