@@ -22,6 +22,10 @@ import { faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+
+
 
 export default {
   components: {
@@ -30,7 +34,7 @@ export default {
 };
 
 /* add icons to the library */
-library.add(faChevronLeft, faChevronRight, faFacebook, faTwitter, faInstagram, faYoutube, faBars, faMagnifyingGlass, faHouseChimney, faSuitcase, faBookOpenReader, faBook, faUser);
+library.add(faChevronLeft, faChevronRight, faFacebook, faTwitter, faInstagram, faYoutube, faBars, faMagnifyingGlass, faHouseChimney, faSuitcase, faBookOpenReader, faBook, faUser, faChevronUp, faCalendarDays,);
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
