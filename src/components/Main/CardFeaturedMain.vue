@@ -5,45 +5,51 @@ export default {
             cards: [
                 {
                     image: new URL("../../assets/img/anime-fashion.webp", import.meta.url).href,
-                    title: "Live Ideas You Might Be Anime",
+                    title: "Fashion Trend Now A Days",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#"
+                    link: "#nogo",
+                    category: 'Fashion'
                 },
                 {
                     image: new URL("../../assets/img/visit-france.webp", import.meta.url).href,
                     title: "Reasons To Visit France",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#nogo"
+                    link: "#nogo",
+                    category: 'Lifestyle'
                 },
                 {
                     image: new URL("../../assets/img/travel-alone.webp", import.meta.url).href,
                     title: "Traveling Alone is Awesome",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#nogo"
+                    link: "#nogo",
+                    category: 'Stories'
                 },
                 {
                     image: new URL("../../assets/img/best-places.webp", import.meta.url).href,
                     title: "Best Places For A Road Trip",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#nogo"
+                    link: "#nogo",
+                    category: 'Travel'
                 },
                 {
                     image: new URL("../../assets/img/rice-ball.webp", import.meta.url).href,
                     title: "Rice Ball",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#nogo"
+                    link: "#nogo",
+                    category: 'Culture'
                 },
                 {
                     image: new URL("../../assets/img/winter.webp", import.meta.url).href,
                     title: "The Winter Is Coming",
                     text: 'December 26, 2022',
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt fugiat aut natus sapiente atque!",
-                    link: "#nogo"
+                    link: "#nogo",
+                    category: 'Lifestyle'
                 },
                 // add more cards here
             ],
