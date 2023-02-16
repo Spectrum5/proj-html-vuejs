@@ -70,6 +70,10 @@ export default {
 /* aggiunta stile css */
 ul {
     li {
+        &:hover {
+            color: $text_red;
+            cursor: pointer;
+        }
         a {
             text-decoration: none;
             color: inherit;
