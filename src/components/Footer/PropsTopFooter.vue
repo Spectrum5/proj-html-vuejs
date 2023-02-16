@@ -47,7 +47,7 @@ export default {
             <div class="col-4">
                 <div class="newslatter d-flex flex-column text-center">
                     <h5>subscribe to newslatter</h5>
-                    <input type="text" class="form-control">
+                    <input placeholder="Email" type="email" class="form-control ">
                     <button class="btn btn-dark mt-2 text-uppercase">subscribe</button>
                 </div>
             </div>
