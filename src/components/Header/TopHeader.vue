@@ -88,4 +88,11 @@ ul {
         }
     }
 }
+
+.fa-brands {
+    color: $text_white;
+    &:hover {
+        background-color: $background_dark;
+    }
+}
 </style>
