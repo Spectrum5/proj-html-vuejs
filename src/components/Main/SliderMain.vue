@@ -1,6 +1,12 @@
 <script>
 
 
+
+
+
+
+
+
 export default {
     data() {
         return {
@@ -79,19 +85,21 @@ export default {
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="carousel">
-                        <div class="inner" ref="inner" :style="innerStyles">
-                            <div class="card" v-for="(card, index) in cards" :key="index">
-                                <img :src="card.image" class="card-img-top" alt="card image">
-                                <div class="card-body">
-                                    <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>
-                                    <p class="card-text fw-bold">{{ card.text }}</p>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="inner" ref="inner" :style="innerStyles">
+                                <div class="card" v-for="(card, index) in cards" :key="index">
+                                    <img :src="card.image" class="card-img-top" alt="card image">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-bold">{{ card.title }}</h5>
+                                        <p class="card-text fw-bold">{{ card.text }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-btn left" @click="prev">prev</button>
+                        <button class="carousel-btn right" @click="next">next</button>
                     </div>
-                    <button @click="prev">prev</button>
-                    <button @click="next">next</button>
                 </div>
             </div>
         </div>
@@ -107,28 +115,56 @@ export default {
     padding: 20px;
 }
 
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
+.carousel-container {
+    position: relative;
 
-    .inner {
-        display: flex;
-        transition: all 500ms ease-in-out;
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
 
-        .card {
-            flex-basis: calc(100% / 4);
-            flex-shrink: 0;
-            margin: 2px;
-            
-            .card-body {
-                color: $text_dark;
-                .card-text {
-                    font-size: 0.9rem;
-                    color: $text_light;
+        .inner {
+            display: flex;
+            transition: all 500ms ease-in-out;
+
+            .card {
+                flex-basis: calc(100% / 4);
+                flex-shrink: 0;
+                margin: 2px;
+
+                .card-body {
+                    color: $text_dark;
+
+                    .card-text {
+                        font-size: 0.9rem;
+                        color: $text_light;
+                    }
+
                 }
-                
             }
         }
     }
-}</style>
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+        border: none;
+        outline: none;
+    }
+
+    .carousel-btn.left {
+        left: 20px;
+    }
+
+    .carousel-btn.right {
+        right: 20px;
+    }
+}
+</style>
